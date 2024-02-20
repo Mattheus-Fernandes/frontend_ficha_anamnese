@@ -1,0 +1,214 @@
+#adm {
+  height: 100vh;
+}
+
+#adm header {
+  padding: 3em 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#adm header .company {
+  display: flex;
+  align-items: center;
+}
+
+#adm header .company img {
+  width: 40px;
+  margin-right: .5em;
+}
+
+#adm header nav ul {
+  display: flex;
+}
+
+#adm header .company div h1 {
+  font-size: 2em;
+}
+
+#adm header nav ul li {
+  list-style: none;
+}
+
+#adm header nav ul li a {
+  text-decoration: none;
+  color: #E0DBFF;
+  padding: .5em;
+  font-size: 1.1em;
+}
+
+#adm header nav ul li a:hover {
+  background: #E0DBFF;
+  color: #756AB6;
+  border-radius: 7px;
+  transition: .4s ease;
+}
+
+#adm header nav ul li a i {
+  margin-right: 3px;
+}
+
+#adm header .menuHamburguer {
+  display: none;
+}
+
+/*
+
+  CONTAINER
+
+*/
+
+#container {
+  height: 70%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3em 0;
+}
+
+#container img {
+  width: 400px;
+}
+
+#container .login {
+  width: 50%;
+  background-color: #756AB6;
+  border-radius: 12px;
+  box-shadow:
+    inset 4px 3px 20px -5px rgb(20 17 17 / 42%),
+    inset -4px -3px 6px 0px rgb(255 255 255 / 25%);
+  ;
+  padding: 2em;
+}
+
+#container .login h1 {
+  font-size: 2.5em;
+  margin-bottom: .5rem;
+  width: 100%;
+}
+
+#container .login form {
+  display: flex;
+  flex-direction: column;
+}
+
+#container .login form label {
+  margin-bottom: 20px;
+}
+
+#container .login form label span {
+  display: block;
+  font-size: 1.7em;
+  margin-bottom: 7px;
+}
+
+#container .login form label input {
+  font-size: 1.1em;
+  padding: 6px;
+  width: 300px;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+}
+
+#container .login form button {
+  font-size: 1.2em;
+  width: 100px;
+  padding: 6px;
+  border-radius: 7px;
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  color: #756AB6;
+  transition: .6s ease;
+}
+
+#container .login form button:hover {
+  color: #E0DBFF;
+  background-color: #8575d3;
+  border: 2px solid #E0DBFF;
+}
+
+.msgError {
+  background-color: #E0DBFF;
+  color: #da3737;
+  border-radius: 5px;
+  width: 35%
+}
+
+.msgError p {
+  font-size: 1.3em;
+  padding: 2px;
+}
+
+
+@media (max-width: 400px) {
+
+  #adm header {
+    padding: 1.2em;
+  }
+
+  #adm header nav {
+    display: none;
+  }
+
+  #adm header .company {
+    font-size: .8em;
+  }
+
+  #adm header .menuHamburguer {
+    display: block;
+  }
+
+  #adm header .menuHamburguer div {
+    display: block;
+    background-color: #E0DBFF;
+    height: 2px;
+    width: 45px;
+    margin: 12px 0;
+  }
+
+  #container img {
+    display: none;
+  }
+
+  #container .login {
+    width: 90%;
+    padding: 1em;
+  }
+
+  #container .login h1 {
+    font-size: 2em;
+    overflow-wrap: break-word;
+    border-bottom: 2px solid #E0DBFF;
+    margin-bottom: 1em;
+  }
+
+  #container .login form label input {
+    font-size: 1.1em;
+    padding: 6px;
+    width: 100%;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+  }
+
+  #container .login form label span {
+    font-size: 1.4em;
+  }
+
+  .msgError {
+    width: 70%;
+  }
+
+  .msgError p {
+    padding: 5px 10px;
+    font-size: 1.1em;
+  }
+
+
+}
