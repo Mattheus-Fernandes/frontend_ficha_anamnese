@@ -1,0 +1,430 @@
+#ficha {
+  height: auto;
+}
+
+#ficha header {
+  padding: 3em 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#ficha header .company {
+  display: flex;
+  align-items: center;
+}
+
+#ficha header .company img {
+  width: 40px;
+  margin-right: .5em;
+}
+
+#ficha header nav ul {
+  display: flex;
+}
+
+#ficha header .company div h1 {
+  font-size: 2em;
+}
+
+#ficha header nav ul li {
+  list-style: none;
+}
+
+#ficha header nav ul li a {
+  text-decoration: none;
+  color: #E0DBFF;
+  padding: .5em;
+  font-size: 1.1em;
+}
+
+#ficha header nav ul li a:hover {
+  background: #E0DBFF;
+  color: #756AB6;
+  border-radius: 7px;
+  transition: .4s ease;
+}
+
+#ficha header nav ul li a i {
+  margin-right: 3px;
+}
+
+#ficha header .menuHamburguer {
+  display: none;
+}
+
+/*
+
+  CONTAINER
+
+*/
+
+#container {
+  height: 70%;
+  width: 90%;
+  margin: 0 auto;
+  padding: 3em 0;
+  position: relative;
+}
+
+
+#container main h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 50px 0;
+}
+
+#container main form {
+  width: 100%;
+  text-align: center;
+  
+}
+
+#container main form .infoClient {
+  display: flex;
+  background-color: #756AB6;
+  border-radius: 12px;
+  box-shadow:
+    inset 4px 3px 20px -5px rgb(20 17 17 / 42%),
+    inset -4px -3px 6px 0px rgb(255 255 255 / 25%);
+  ;
+  padding: 3em;
+  text-align: left;
+}
+
+
+#container main form .infoClient div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container main form div label {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+#container main form div label span {
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#container main form div label input {
+  width: 100%;
+  padding: 5px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+#container main form div label .inputRadio {
+  display: flex;
+}
+
+#container main form div label .inputRadio input {
+  width: 15px;
+  margin-right: 5px;
+}
+
+#container main form .personalAssessment {
+  display: flex;
+  background-color: #756AB6;
+  border-radius: 12px;
+  box-shadow:
+    inset 4px 3px 20px -5px rgb(20 17 17 / 42%),
+    inset -4px -3px 6px 0px rgb(255 255 255 / 25%);
+  ;
+  padding: 3em;
+  text-align: left;
+}
+
+#container main form .personalAssessment div {
+  width: 50%;
+}
+
+#container main form .personalAssessment div label {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+#container main form .personalAssessment div label:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+#container main form .personalAssessment div label div {
+  display: flex;
+}
+
+#container main form .personalAssessment div label div span {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+#container main form .personalAssessment div label div span input {
+  margin-right: 5px;
+}
+
+#container main form .personalAssessment div label .specifyInput {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+#container main form .personalAssessment div label .specifyInput input {
+  height: 30px;
+  margin-left: 5px;
+  font-size: .8em;
+}
+
+
+#container main form .procedures {
+  display: flex;
+  background-color: #756AB6;
+  border-radius: 12px;
+  box-shadow:
+    inset 4px 3px 20px -5px rgb(20 17 17 / 42%),
+    inset -4px -3px 6px 0px rgb(255 255 255 / 25%);
+  ;
+  padding: 3em;
+  text-align: left;
+}
+
+#container main form .procedures div {
+  width: 50%;
+}
+
+#container main form .procedures div label {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#container main form .procedures div label input {
+  width: 45%;
+}
+
+#container main form .procedures div label:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+#container main form .procedures div label div {
+  display: flex;
+}
+
+#container main form .procedures div label div span {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+#container main form .procedures div label div span input {
+  margin-right: 5px;
+}
+
+#container main form .procedures div label .specifyInput {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+#container main form .procedures div label .specifyInput input {
+  height: 30px;
+  margin-left: 5px;
+}
+
+#container main form article {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #E0DBFF;
+  padding: 2em;
+  border-radius: 7px;
+  position: relative;
+}
+
+#container main form article p {
+  color: #da3737;
+  font-size: 1.2em;
+}
+
+#container main form article label div {
+  color: #1e1e1f;
+  display: flex;
+  justify-content: space-around;
+}
+
+#container main form article label div span {
+  display: flex;
+  align-items: center;
+}
+
+#container main form article label div span input {
+  margin-right: 5px;
+}
+
+#container main form button {
+  width: 12%;
+  padding: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: 2px solid transparent;
+  border-radius: 7px;
+  transition: .6s ease;
+  cursor: pointer;
+}
+
+#container main form button:hover {
+  color: #E0DBFF;
+  background-color: #8575d3;
+  border: 2px solid #E0DBFF;
+}
+
+#container main form #msgError {
+  background-color: #E0DBFF;
+  color: #da3737;
+  border-radius: 10px;
+}
+
+#container main form #msgError {
+  width: 40%;
+  margin: 2em auto;
+}
+#container main form #msgError p {
+  padding: 1em;
+  font-size: 1.2em;
+}
+
+
+
+@media (max-width: 400px) {
+
+  #ficha header {
+    padding: 1.2em;
+  }
+
+  #ficha header nav {
+    display: none;
+  }
+
+  #ficha header .company {
+    font-size: .8em;
+  }
+
+  #ficha header .menuHamburguer {
+    display: block;
+  }
+
+  #ficha header .menuHamburguer div {
+    display: block;
+    background-color: #E0DBFF;
+    height: 2px;
+    width: 45px;
+    margin: 12px 0;
+  }
+
+  #container {
+    width: 90%;
+  }
+
+  #container main h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 25px 0;
+  }
+
+  #container main form .infoClient {
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  #container main form .infoClient div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  #container main form div label {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #container main form .personalAssessment {
+    flex-direction: column;
+    padding: 1em;
+    text-align: left;
+  }
+
+  #container main form .personalAssessment div {
+    width: 100%;
+  }
+
+  /*Flex column pergunta lamina, tamanho e formato*/
+
+  #container main form .personalAssessment div label .blade,
+  #container main form .procedures div label .size,
+  #container main form .procedures div label .format {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  #container main form .personalAssessment div label .specifyInput {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  #container main form .procedures {
+    flex-direction: column;
+    padding: 1em;
+    text-align: left;
+  }
+
+  #container main form .procedures div {
+    width: 100%;
+  }
+
+  #container main form .procedures div label input {
+    width: 100%;
+  }
+
+  #container main form .procedures div label:nth-last-child(1) {
+    margin-bottom: 20px;
+  }
+
+  #container main form article {
+    width: 100%;
+  }
+
+  #container main form article label div {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #container main form article label div span {
+    margin: 10px 0;
+  }
+
+  #container main form button {
+    width: 50%;
+    margin: 0;
+  }
+
+  #container main form #msgError {
+    width: 100%;
+    margin: 3em auto;
+  }
+
+  #container main form #msgError p {
+    padding: 1em;
+    font-size: 1.4em;
+  }
+}
