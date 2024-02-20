@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha de Anamense</title>
+  <link rel="stylesheet" href="../../styles/ficha.css">
+  <link rel="stylesheet" href="../../styles/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <section id="ficha">
+    <header>
+      <div class="company">
+        <img src="../../img/logo.png" alt="logo_header">
+        <div>
+          <h1>
+            Thuany Nails
+          </h1>
+          <p>
+            Alongamento e Manutenção
+          </p>
+          <p>
+            em Unhas
+          </p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li>      
+            <a href="/pages/home/index.html">
+              <i class="fa-solid fa-house-chimney"></i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="../administrador/administrador.html">
+              <i class="fa-solid fa-person-chalkboard"></i>
+              Administrador
+            </a>
+          </li>
+          <li>
+            <a href="/pages/ficha/ficha.html">
+              <i class="fa-solid fa-book-bookmark"></i>
+              Ficha Anamnese
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menuHamburguer">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </header>
+    <div id="container">
+      <main>
+        <form action="/api/register/client" method="POST" id="form">
+          <h1>
+            Ficha de Anamnese
+          </h1>
+          <div class="infoClient">
+            <div>
+              <label>
+                <span>Nome:</span>
+                <input type="text" name="name" placeholder="Digite o seu nome">
+              </label>
+              <label>
+                <span>Sobrenome:</span>
+                <input type="text" name="lastName" placeholder="Digite o seu sobrenome">
+              </label>
+              <label>
+                <span>Idade:</span>
+                <input type="number" name="age" placeholder="Informe a sua idade">
+              </label>
+              <label>
+                <span>Endereço:</span>
+                <input type="text" name="adress" placeholder="Digite o seu endereço">
+              </label>
+              <label>
+                <span>WhatsApp:</span>
+                <input type="text" name="whatsapp" placeholder="(XX) XXXX - XXXX">
+              </label>
+            </div>
+            <div>
+              <label>
+                <span>RG:</span>
+                <input type="text" name="rg" placeholder="XX.XXX.XXX-X">
+              </label>
+              <label>
+                <span>CPF:</span>
+                <input type="text" name="cpf" placeholder="XXX-XXX-XXX-XX">
+              </label>
+              <label>
+                <span>E-mail:</span>
+                <input type="text" name="email" placeholder="Digite o seu melhor email">
+              </label>
+              <label>
+                <span>Como me conheceu?</span>
+                <span class="inputRadio"><input name="met" type="radio" value="Instagram">Instagram</span>
+                <span class="inputRadio"><input  name="met" type="radio" value="Indicação">Indicação</span>
+                <span class="inputRadio"><input  name="met" type="radio" value="Outros">Outros</span>
+              </label>
+            </div>
+          </div>
+
+          <h1>
+            Avaliação
+          </h1>
+          <div class="personalAssessment">
+            <div>
+              <label>
+                <span>1- Tem diabets?</span>
+                <div>
+                  <span>
+                    <input type="radio" name="diabetes"  value="Sim"> Sim
+                  </span>
+                  <span>
+                    <input type="radio" name="diabetes" value="Não"> Não
+                  </span>
+                </div>
+              </label>
+
+              <label>
+                <span>2 - Possui alergia à  esmalte / cosméticos / algum componente?</span>
+                <div>
+                  <span>
+                    <input type="radio" name="allergy"  value="Sim"> Sim
+                  </span>
+                  <span>
+                    <input type="radio" name="allergy" value="Não"> Não
+                  </span>
+                </div>
+                <span class="specifyInput">
+                  Especifique:
+                  <input type="text" name="allergySpecify" placeholder="Ex: Formladeído, Solventes e etc.">
+                </span>
+              </label>
+
+              <label>
+                <span>3- Costuma a retirar a culticula?</span>
+                <div>
+                  <span>
+                    <input type="radio" name="cuticle"  value="Sim"> Sim
+                  </span>
+                  <span>
+                    <input type="radio" name="cuticle" value="Não"> Não
+                  </span>
+                </div>
+              </label>
+
+              <label>
+                <span>4- Possui problemas com onicomicose?</span>
+                <div>
+                  <span>
+                    <input type="radio" name="ringworm"  value="Sim"> Sim
+                  </span>
+                  <span>
+                    <input type="radio" name="ringworm" value="Não"> Não
+                  </span>
+                </div>
+                <span class="specifyInput">
+                  Especifique:
+                  <input type="text" name="ringwormSpecify" placeholder="Ex: Micose, Fungos e etc.">
+                </span>
+              </label>
+
+              <label>
+                <span>5- Faz uso de medicamentos?</span>
+                <div>
+                  <span>
+                    <input type="radio" name="useMedicine"  value="Sim"> Sim
+                  </span>
+                  <span>
+                    <input type="radio" name="useMedicine" value="Não"> Não
+                  </span>
+                </div>
+              </label>
+            </div>
+
+            <div>
+              <label>
+                <span>6- Hábito de roer unhas?</span>
+                <div>
+                  <span>
+                    <input type="radio" name="nailBiting"  value="Sim"> Sim
+                  </span>
+                  <span>
+                    <input type="radio" name="nailBiting" value="Não"> Não
+                  </span>
+                </div>
+              </label>
+
+              <label>
+                <span>7- Possui unhas encravadas?</span>
+                <div>
+                  <span>
+                    <input type="radio" name="ingrowToenail"  value="Sim"> Sim
+                  </span>
+                  <span>
+                    <input type="radio" name="ingrowToenail" value="Não"> Não
+                  </span>
+                </div>
+              </label>
+
+              <label>
+                <span>8- A lâmina apresenta: (opcional) </span>
+                <div class="blade">
+                  <span> 
+                    <input type="radio" name="blade" value="Dermacação"> Demarcação
+                  </span>
+                  <span>
+                    <input type="radio" name="blade" value="Estrias"> Estrias
+                  </span>
+                  <span>
+                    <input type="radio" name="blade" value="Manchas"> Manchas
+                  </span>
+                  <span>
+                    <input type="radio" name="blade" value="Decolamentos"> Descolamentos
+                  </span>
+                </div>
+                <span class="specifyInput">
+                  Especifique:
+                  <input type="text" name="bladeSpecify" placeholder="Ex: Unhas Fracas e etc.">
+                </span>
+              </label>
+
+              <label>
+                <span>9- Pratica esporte de imapacto?</span>
+                <div>
+                  <span>
+                    <input type="radio" name="sport" value="Sim"> Sim
+                  </span>
+                  <span>
+                    <input type="radio" name="sport" value="Não"> Não
+                  </span>
+                </div>
+              </label>
+
+              <label>
+                <span>10- Entra em piscina ou mar com frequencia?</span>
+                <div>
+                  <span>
+                    <input type="radio" name="poolAndSea" value="Sim"> Sim
+                  </span>
+                  <span>
+                    <input type="radio" name="poolAndSea" value="Não"> Não
+                  </span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <h1>
+            Procedimentos
+          </h1>
+          <div class="procedures">
+            <div>
+              <label>
+                <span>Por que deseja usar alongamento: (opcional)</span>
+                <input type="text" placeholder="Ex: Para ter unhas apresentáveis" name="whyStretching">
+              </label>
+
+              <label>
+                <span>Tipo de alongamento?</span>
+                <div>
+                  <span>
+                    <input type="radio" name="typeStretching" value="Gel"> Gel
+                  </span>
+                  <span>
+                    <input type="radio" name="typeStretching" value="Fibra"> Fibra
+                  </span>
+                </div>
+              </label>
+
+              <label>
+                <span>Tamanho:</span>
+                <div class="size">
+                  <span>
+                    <input type="radio" name="nailSize" value="Curto"> Curto
+                  </span>
+                  <span>
+                    <input type="radio" name="nailSize" value="Médio"> Médio
+                  </span>
+                  <span>
+                    <input type="radio" name="nailSize" value="Longo"> Longo
+                  </span>
+                </div>
+              </label>
+            </div>
+
+            <div>
+              <label>
+                <span>Formato:</span>
+                <div class="format">
+                  <span>
+                    <input type="radio" name="nailFormat" value="Almond"> Almond
+                  </span>
+                  <span>
+                    <input type="radio" name="nailFormat" value="Bailarina"> Bailarina
+                  </span>
+                  <span>
+                    <input type="radio" name="nailFormat" value="Quadrado"> Quadrado
+                  </span>
+                </div>
+              </label>
+
+              <label>
+                <span>Detalhes: (opcional)</span>
+                <input type="text" name="details" placeholder="Ex: Francesinha, Encapsulada e etc.">
+              </label>
+            </div>
+          </div>
+
+          <h1>
+            Importante
+          </h1>
+          <article>
+            <p>
+              Afirmo estar cliente dos benefícios, riscos, contra indicação e advertência a mim informados, me comprometo a seguir todas as orientações e fazer uso dos produtos recomendados. Declaro verdadeiras as informações preenchidas acima isentando a profissional de qualquer culpa ou responsabilidade provinentes de omissçao ou desconhecimento. Por fim, autorizo a realização do procedimento a mim indicado e o uso das imagens relativas ao mesmo, para fins de divulgações, incluindo redes sociais.
+            </p>
+
+            <label>
+              <div>
+                <span>
+                  <input type="radio" name="terms" value="Sim"> Concordo com os termos.
+                </span>
+                <span>
+                  <input type="radio" name="terms" value="Não"> Não concordo com os termos.
+                </span>
+              </div>
+            </label>
+          </article>  
+
+          <div id="msgError"></div>
+          
+          <button type="submit">Enviar ficha</button>
+        </form>
+      </main>
+    </div>
+  </section>
+  <script src="ficha.js"></script>
+</body>
+
+</html>
