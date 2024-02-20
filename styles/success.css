@@ -1,0 +1,42 @@
+#success {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#success div {
+  text-align: center;
+  background-color: #E0DBFF;
+  color: #756AB6;
+  padding: 2em 4em;
+  border-radius: 10px;
+}
+
+#success div i {
+  font-size: 20em;
+  margin-bottom: 20px;
+}
+
+#success div p {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+@media (max-width: 400px) {
+
+  #success div {
+    width: 90%;
+    padding: 2em;
+  }
+
+  #success div i {
+    font-size: 10em;
+    margin-bottom: 20px;
+  }
+
+  #success div p {
+    width: 100%;
+  }
+
+}
